@@ -1,15 +1,19 @@
 name: lab_clinicas_core
 description: "A new Flutter package project."
 version: 0.0.1
-homepage:
+
 
 environment:
   sdk: ^3.9.0
   flutter: ">=1.17.0"
 
 dependencies:
+  asyncstate: ^2.1.1-dev.1
+  dio: ^5.9.0
   flutter:
     sdk: flutter
+  loading_animation_widget: ^1.3.0
+  shared_preferences: ^2.5.3
   signals_flutter: ^6.0.2
   top_snackbar_flutter: ^3.3.0
 
@@ -22,7 +26,7 @@ dev_dependencies:
 # following page: https://dart.dev/tools/pub/pubspec
 
 # The following section is specific to Flutter packages.
-flutter:
+#flutter:
 
   # To add assets to your package, add an assets section, like this:
   # assets:

@@ -21,7 +21,7 @@ class RestClient extends DioForNative {
           ),
           AuthInterceptor(),
         ]);
-      };
+      }
 
   RestClient get auth {
     options.extra['DIO_AUTH'] = true;

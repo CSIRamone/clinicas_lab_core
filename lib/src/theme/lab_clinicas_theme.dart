@@ -1,8 +1,6 @@
-
 import 'package:flutter/material.dart';
 
 final class LabClinicasTheme {
-
   static const orangeColor = Color(0xFFFFAE45);
   static const ligthOrangeColor = Color(0xFFFFEFE9);
   static const blueColor = Color(0xFF01BDD6);
@@ -11,8 +9,7 @@ final class LabClinicasTheme {
   static final _defaultInputBorder = OutlineInputBorder(
     borderSide: BorderSide(color: ligthOrangeColor),
     borderRadius: BorderRadius.circular(16),
-    );
-  
+  );
 
   static final ligthTheme = ThemeData(
     colorScheme: ColorScheme.fromSeed(seedColor: ligthOrangeColor),
@@ -36,22 +33,32 @@ final class LabClinicasTheme {
       errorBorder: _defaultInputBorder.copyWith(
         borderSide: const BorderSide(color: Colors.red),
       ),
-
+    ),
+    outlinedButtonTheme: OutlinedButtonThemeData(
+      style: OutlinedButton.styleFrom(
+        backgroundColor: Colors.white,
+        side: const BorderSide(color: blueColor),
+        foregroundColor: blueColor,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+        textStyle: TextStyle(
+          fontFamily: 'Montserrat',
+          fontSize: 14,
+          fontWeight: FontWeight.bold,
+        ),
+      ),
     ),
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
         backgroundColor: blueColor,
         foregroundColor: Colors.white,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(16),
-        ),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
         textStyle: const TextStyle(
           fontFamily: 'Montserrat',
           fontSize: 14,
           fontWeight: FontWeight.w700,
         ),
-      ) 
-      ,),
+      ),
+    ),
   );
   static final darkTheme = ThemeData.dark();
 
@@ -72,7 +79,4 @@ final class LabClinicasTheme {
     fontWeight: FontWeight.w500,
     color: blueColor,
   );
-
-
-  
 }

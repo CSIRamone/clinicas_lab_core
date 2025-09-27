@@ -1,8 +1,8 @@
+import 'package:dio/browser.dart';
 import 'package:dio/dio.dart';
-import 'package:dio/io.dart';
 import 'package:lab_clinicas_core/src/restClient/interceptors/auth_interceptor.dart';
 
-class RestClient extends DioForNative {
+class RestClient extends DioForBrowser {
   RestClient(String baseUrl)
     : super(
         BaseOptions(
